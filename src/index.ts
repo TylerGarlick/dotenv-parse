@@ -33,7 +33,7 @@ const getLines = async (path: string) => {
  */
 const getUncommentedLines = async (path: string) => (await getLines(path)).filter((line) => !line.startsWith(`#`))
 
-const readEnvFile = async (path: string) => {
+export const readEnvFile = async (path: string) => {
   await throwIfNotExists(path)
   const filteredLines = await getUncommentedLines(path)
 
