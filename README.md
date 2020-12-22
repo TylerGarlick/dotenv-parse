@@ -1,1 +1,3 @@
-# Template
+# parse-dotenv
+
+> Parses dotenv files
