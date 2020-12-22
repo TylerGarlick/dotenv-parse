@@ -1,0 +1,26 @@
+{
+  "extends": "@sindresorhus/tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "dist",
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "lib": [
+      "dom",
+      "es6",
+      "ES2015",
+      "ES2017",
+      "ES2018"
+    ]
+  },
+  "include": [
+    "src",
+    "examples",
+    "docs"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}
